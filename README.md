@@ -1,6 +1,6 @@
 # Dropbox 엔지니어링 커리어 프레임워크 (한국어 번역)
 
-🌐 번역본 사이트: https://korearentaltech.github.io/dbx-career-framework/overview.html
+🌐 번역본 사이트: https://rentaltech.global/dbx-career-framework/overview.html
 📄 원문 사이트: https://dropbox.github.io/dbx-career-framework/
 🔗 원본 저장소: https://github.com/dropbox/dbx-career-framework
 
