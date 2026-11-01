@@ -1,50 +1,24 @@
-# Dropbox Engineering Career Framework
+# Dropbox 엔지니어링 커리어 프레임워크 (한국어 번역)
 
-Visit [our career framework site](https://dropbox.github.io/dbx-career-framework/).
+🌐 번역본 사이트: https://korearentaltech.github.io/dbx-career-framework/overview.html
+📄 원문 사이트: https://dropbox.github.io/dbx-career-framework/
+🔗 원본 저장소: https://github.com/dropbox/dbx-career-framework
 
-# Background
+이 저장소는 Dropbox가 Apache License 2.0으로 공개한 **Dropbox Engineering Career Framework**를 한국렌탈테크(KRT)가 한국어로 번역한 **비공식 번역본**입니다. Dropbox와 무관하며, 번역에 오류가 있거나 해석이 다를 경우 원문이 우선합니다.
 
-This repo has two parts:
+## 구성
+- `docs/` — GitHub Pages로 배포되는 정적 사이트 (원본과 동일한 구조, 본문만 한국어로 번역)
+- `clean.py`, `allow-list.txt` — 원본 저장소의 도구 (변경 없음)
 
-1. A public version of drl/eng-career, located in the `docs` directory
-2. A `cleaner.py` script that converts drl/eng-career into the [public
-   version](https://dropbox.github.io/dbx-career-framework/)
+## 원본 대비 변경 사항 (Apache 2.0 §4(b) 고지)
+- `docs/*.html`의 본문·내비게이션 텍스트를 한국어로 번역
+- 한국어 폰트(Pretendard) 및 줄바꿈(`word-break: keep-all`) 스타일 추가
+- 각 페이지 상단에 번역본 안내 문구 추가
+- 원본 README는 `README.original.md`로 보존
 
-For complete instructions on updating and publishing the framework, 
-visit the appbox repo containing the source and internally hosted version.
+## 배포
+GitHub Pages: `main` 브랜치의 `/docs` 폴더 (원본과 동일)
 
-# Setup
-
-To run `cleaner.py`:
-
-1. (One time) Create a virtual env. for the project: `python3 -m venv env`
-2. Active the virtual env: `source env/bin/activate`
-3. (One time) `python3 -m pip install beautifulsoup4`
-3. Go to drl/eng-career and get your session cookie (using the browser's developer tools)
-4. Download the binder: `wget --header "Cookie: sessionid=SESSION_ID" --mirror --convert-links
-   --adjust-extension --page-requisites --no-parent -P raw --cut-dirs=3
-   https://app.dropboxer.net/binder/eng-career/`
-5. Run the "cleaner": `python3 clean.py raw/app.dropboxer.net ./docs --allow_file allow-list.txt`
-
-Review any changes to the site made by the script and open a pull request.
-
-# License
-
-Unless otherwise noted:
-
-```
-Copyright (c) 2021 Dropbox, Inc.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-```
+## License
+Copyright (c) 2021 Dropbox, Inc. — Licensed under the Apache License, Version 2.0. 자세한 내용은 [LICENSE](LICENSE) 참고.
+Korean translation © 2026 Korea Rental Tech, distributed under the same Apache License 2.0.
